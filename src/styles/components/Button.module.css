@@ -1,0 +1,15 @@
+.button {
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  border: none;
+  -webkit-transition-duration: 0.3s;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 1px;
+  box-shadow: 0 0 1em black;
+}
+
+.button:hover{
+  opacity: 90%;
+}

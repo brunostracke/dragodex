@@ -1,0 +1,94 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+  }
+
+.container > h2 {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 1rem black;
+  }
+
+.container > form {
+  min-width: 400px;
+  background-color: rgba(0, 0, 0, 0.493);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  
+  border-left: var(--blue) solid 1px;
+}
+
+.inputForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputForm input, .inputForm textarea {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-top: 3px;
+  resize: none;
+}
+
+
+.inputForm .inputName {
+  font-size: 1.8rem;
+}
+
+.inputForm label {
+  color: #299eec
+}
+
+.inputForm input:read-write, .inputForm textarea:read-write {
+  background-color: white;
+  color: black;
+  font-size: 1.3rem;
+  padding-left: 4px;
+}
+
+.inputForm textarea:read-write {
+  resize: vertical;
+  min-height: 50px;
+
+}
+
+.optionButtons, .editButtons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.editButtons {
+  margin-top: 10px;
+}
+
+.deleteCard {
+  position: absolute;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.897);
+  padding: 60px;
+}
+
+.deleteCardButtons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 420px) {
+  .container > form {
+    min-width: unset;
+    width: 90%;
+  }
+  .deleteCard {
+    padding: 20px;
+  }
+}
